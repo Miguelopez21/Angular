@@ -1,0 +1,25 @@
+<div *ngIf="Producto">
+  <p>{{Producto.name}}</p>
+  <p>{{Producto.description}}</p>
+  <p>{{Producto.price}}</p>
+  <p>{{Producto.price}}</p>
+  <p>{{Producto.expDate}}</p>
+  <p>{{Producto.score}}</p>
+  <img src="{{Producto.image}}">
+</div>
+<div>
+  Error: estamos presentado problemas
+</div>
+<div *ngFor="let cadaUno of Productos">
+  <div *ngIf="cadaUno">
+    <p>{{cadaUno.name}}</p>
+    <p>{{cadaUno.description}}</p>
+    <p>{{cadaUno.price}}</p>
+    <p>{{cadaUno.price}}</p>
+    <p>{{cadaUno.expDate}}</p>
+    <p>{{cadaUno.score}}</p>
+  </div>
+</div>
+<div *ngIf="!Productos">
+  ojo la cago
+</div>
